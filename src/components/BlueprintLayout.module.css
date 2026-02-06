@@ -1,0 +1,30 @@
+.wrapper {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.frame {
+  position: relative;
+  border: 1px solid var(--line-cyan);
+  padding: 2rem;
+}
+
+.labelTopLeft,
+.labelBottomRight {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--line-cyan);
+  opacity: 0.5;
+}
+
+.labelTopLeft {
+  top: 10px;
+  left: 10px;
+}
+
+.labelBottomRight {
+  bottom: 10px;
+  right: 10px;
+}

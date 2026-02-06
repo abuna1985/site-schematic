@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Header from "../components/Header";
+import BlueprintLayout from "../components/BlueprintLayout";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning>{children}</body>    
+      <body suppressHydrationWarning>
+        <BlueprintLayout>
+          <Header />
+          <main>{children}</main>
+        </BlueprintLayout>
+      </body>
     </html>
   );
 }

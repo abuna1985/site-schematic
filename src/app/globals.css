@@ -19,12 +19,13 @@
 }
 
 body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-attachment: fixed;
   background-color: var(--bg-blueprint);
   color: var(--line-white);
   font-family: var(--font-mono);
-  min-height: 100vh;
-  overflow-x: hidden;
-  
+
   /* Technical Grid Background */
   background-image: 
     linear-gradient(var(--bg-grid) 1px, transparent 1px),
