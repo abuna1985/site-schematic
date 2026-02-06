@@ -1,0 +1,62 @@
+:root {
+  /* Blueprint Colors */
+  --bg-blueprint: #002b5b;
+  --bg-grid: rgba(255, 255, 255, 0.05);
+  --line-cyan: #00f2ff;
+  --line-white: rgba(255, 255, 255, 0.8);
+  --line-danger: #ff4d4d;
+  --line-warning: #ffcc00;
+  --line-success: #00ff88;
+  
+  /* Typography */
+  --font-mono: 'JetBrains Mono', 'Space Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-blueprint);
+  color: var(--line-white);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  overflow-x: hidden;
+  
+  /* Technical Grid Background */
+  background-image: 
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--line-cyan);
+}
+
+a {
+  color: var(--line-cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Common Blueprint Utilities */
+.schematic-line {
+  height: 1px;
+  background: var(--line-cyan);
+  box-shadow: 0 0 10px var(--line-cyan);
+}
+
+.node {
+  border: 1px solid var(--line-cyan);
+  padding: 1rem;
+  background: rgba(0, 43, 91, 0.8);
+  backdrop-filter: blur(4px);
+}
