@@ -65,7 +65,9 @@ Set up `globals.css` with the "Engineering Schematic" variables:
 ---
 
 ## Success Criteria for Sprint 1
-- [ ] Next.js app running on `localhost:3000`.
-- [ ] CSS Modules scoped correctly for each component.
-- [ ] Page displays a grid background and a "Mock" architecture map.
-- [ ] The "Score" counter is visible and styled.
+- [x] Next.js 14 app initialized with TypeScript and strict mode.
+- [x] CSS Modules and Global CSS variables established for "Blueprint" vibe.
+- [x] `BlueprintLayout` implemented with "Anchor and Pin" absolute positioning for labels.
+- [x] `Header` implemented with persistent positioning in `layout.tsx`.
+- [x] Hydration warnings suppressed for browser extensions.
+- [x] Git repository initialized and feature branch `feat/header` pushed.

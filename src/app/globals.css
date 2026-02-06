@@ -7,7 +7,6 @@
   --line-danger: #ff4d4d;
   --line-warning: #ffcc00;
   --line-success: #00ff88;
-  
   /* Typography */
   --font-mono: 'JetBrains Mono', 'Space Mono', monospace;
 }
@@ -21,12 +20,11 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: var(--font-mono);
+  color: var(--line-white);
+  /* Technical Grid Background */
   background-attachment: fixed;
   background-color: var(--bg-blueprint);
-  color: var(--line-white);
-  font-family: var(--font-mono);
-
-  /* Technical Grid Background */
   background-image: 
     linear-gradient(var(--bg-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
