@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Header from "../components/Header";
-import BlueprintLayout from "../components/BlueprintLayout";
+import Header from "@/components/Header";
+import BlueprintLayout from "@/components/BlueprintLayout";
 import "./globals.css";
 
 export const metadata: Metadata = {

@@ -7,12 +7,15 @@
   --line-danger: #ff4d4d;
   --line-warning: #ffcc00;
   --line-success: #00ff88;
-  
+  --bg-glass: color-mix(in srgb, var(--bg-blueprint), transparent 50%);
+  --bg-glass-heavy: color-mix(in srgb, var(--bg-blueprint), transparent 20%);
+  --shadow-glow: color-mix(in srgb, var(--line-cyan), transparent 80%);
   /* Typography */
   --font-mono: 'JetBrains Mono', 'Space Mono', monospace;
 }
 
 * {
+  /* Simple Reset */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
