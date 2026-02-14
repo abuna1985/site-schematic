@@ -20,7 +20,7 @@
 .spacer {
   width: 100%;
   flex-basis: 0;
-  transition: flex-grow 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: flex-grow 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heroSection {
@@ -39,7 +39,7 @@
 
 .hudStatus {
   margin-bottom: 1rem;
-  font-family:var(--font-mono);
+  font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--line-cyan);
   text-transform: uppercase;

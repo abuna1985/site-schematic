@@ -19,6 +19,6 @@ export const scanUrl = async (url: string): Promise<ScanResult> => {
     return { data: result, error: null };
   } catch (error) {
     // 4. handle the unexpected failures gracefully
-    return { data: null, error: "SYSTEM::CRITICAL_FAILURE"};
+    return { data: null, error: "SYSTEM::CRITICAL_FAILURE" };
   }
 };

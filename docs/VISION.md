@@ -1,27 +1,25 @@
-# SiteSchematic: Overall Project Vision
+# SiteSchematic: Project Vision
 
 ## 1. Core Purpose
-SiteSchematic is a high-leverage technical diagnostic tool designed specifically for Senior Software Engineers to demonstrate their value to agency leadership. It "X-rays" any website to visualize the "Bridge" between legacy systems (PHP/WordPress) and modern architectures (React/Next.js).
+SiteSchematic is a lead-generation diagnostic tool for digital agencies. It "X-rays" legacy websites to visualize the structural liabilities of monolithic systems (WordPress/CMS) and heavy JavaScript architectures (React/Next.js), providing a "Blueprint for Transition" to high-performance Astro/Headless environments.
 
 ## 2. Target Audience
-**Primary:** Directors of Technology, CTOs, and Engineering Managers at mid-sized digital agencies (51-200 employees).
-**Secondary:** Clients of those agencies who need "Visual Proof" of why a technical refactor is necessary.
+- **Digital Agencies:** A sales weapon to visually prove technical debt and win high-ticket refactor projects.
+- **CTOs & Tech Leaders:** Engineering managers who need data-driven justification for modernizing their stack.
 
-## 3. The "Force Multiplier" Value Proposition
-- **For the Agency:** It’s a sales weapon. It helps them win refactor projects by visually proving technical debt.
-- **For You (Adam):** It proves you are an Architect, not just a "coder." It demonstrates your 6 years of experience (Agency Dev + Mentor) through high-end visualization and insightful diagnostic notes.
+## 3. The "Lead-Gen" Value Proposition
+- **Visual Proof:** Transforms abstract technical debt into a tangible engineering schematic.
+- **Conversion Focused:** Bridges the gap between "it works" and "it's a liability" by highlighting specific business risks.
+- **WP-to-Astro Focus:** Specifically optimized to show why WordPress sites are a security and performance burden.
 
 ## 4. Visual Vibe: "The Technical Blueprint"
 - **Style:** A "Live Schematic" that looks like a high-end engineering drawing.
 - **Background:** Subtle CSS-based grid paper.
-- **Motion:** GSAP-driven "sketching" and "line-drawing" animations when results are revealed.
-- **Colors:** Deep Blueprint Blue (#002B5B), Neon Cyan for modern tech, and Warning Red for tech debt.
+- **Motion:** GSAP-driven "sketching" and "line-drawing" animations.
+- **Complexity Heatmap:** Legcy sites show "tangled" lines to visually represent technical debt, while modern sites show clean, orthogonal lines.
 
-## 5. Technical Architecture (Separation of Concerns)
-- **The Engine (Server):** Next.js Server Actions using Cheerio to scrape and parse site headers/DOM.
-- **The Data Contract:** A standardized JSON schema that bridges the Scraper and the UI.
-- **The UI (Client):** React components styled with CSS Modules and animated with GSAP.
-- **Sharing:** $0 Database-less sharing using Base64 URL encoding.
-
-## 6. Project Goal
-To move from inception to a live, shareable Vercel deployment in 3 days, providing a "Forever Project" that can be expanded with more advanced diagnostic logic over time.
+## 5. Technical Architecture
+- **Diagnostic Engine:** A lightweight service that fingerpints site architectures and calculates stress factors.
+- **The Data Contract:** A standardized JSON schema (Zod) that bridges the Diagnostic Engine and the UI.
+- **Humble UI:** Pure presentational React components that "listen" to props.
+- **Performance:** Optimized for zero impact on TBT, ensuring the tool itself is a model of high-performance code.

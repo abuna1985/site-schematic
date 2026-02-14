@@ -1,37 +1,35 @@
 import { AuditReport } from "@/types/audit";
 
-export const MOCK_AUDIT_REPORT: AuditReport = {
-  url: "https://reddoor.biz",
-  score: 72,
-  stack: {
-    backend: {
-      name: "WordPress",
-      version: "6.1",
-      status: "legacy",
-    },
-    frontend: {
-      name: "Next.js",
-      version: "14.0",
-      status: "modern",
-    },
-    bridge: "REST API",
+export const MOCK_PROFILES: Record<string, AuditReport> = {
+  wordpress: {
+    url: "https://legacy-site.com/wp-admin/",
+    siteType: "wordpress",
+    factors: [
+      {
+        id: "arch",
+        label: "Architecture",
+        status: "burden",
+        value: "Monolithic WP",
+        description:
+          "Old building materials make it expensive to change things.",
+      },
+      {
+        id: "risk",
+        label: "Operational Risk",
+        status: "burden",
+        value: "18 Plugins",
+        description:
+          "Too many 3rd-party parts make the site fragile and unsafe.",
+      },
+      {
+        id: "ux",
+        label: "User Experience",
+        status: "burden",
+        value: "5.4s Load Time",
+        description:
+          "The site is so heavy that customers leave before it loads.",
+      },
+    ],
+    recommendations: [],
   },
-  warnings: [
-    {
-      type: "debt",
-      label: "jQuery 3.5.1 detected",
-      severity: "high",
-    },
-    {
-      type: "perf",
-      label: "Unoptimized Images (2.4MB)",
-      severity: "medium",
-    },
-    {
-      type: "security",
-      label: "Exposed WP-API Endpoints",
-      severity: "low",
-    },
-  ],
-  mentorNote: "This architecture is 'Stable but Stalled.' The bridge is working, but the legacy jQuery is bottlenecking your Next.js performance. Transitioning these final scripts to React components would reduce TBT by 40%.",
 };

@@ -1,4 +1,4 @@
-import styles from './Header.module.css'
+import styles from "./Header.module.css";
 
 export default function Header() {
   return (
@@ -6,5 +6,5 @@ export default function Header() {
       <div>[SITE::SCHEMATIC]</div>
       <div>v1.0.0-BETA</div>
     </header>
-  )
+  );
 }

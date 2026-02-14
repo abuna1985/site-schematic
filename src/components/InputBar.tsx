@@ -13,7 +13,12 @@ interface InputBarProps {
   isLocked?: boolean;
 }
 
-export default function InputBar({ onScan, onInputEdit, isLoading, isLocked }: InputBarProps) {
+export default function InputBar({
+  onScan,
+  onInputEdit,
+  isLoading,
+  isLocked,
+}: InputBarProps) {
   const [inputValue, setInputValue] = useState("");
   const [error, setError] = useState<string | null>(null);
 
@@ -35,7 +40,7 @@ export default function InputBar({ onScan, onInputEdit, isLoading, isLocked }: I
     } else {
       setError("ERROR::INVALID_URL_FORMAT");
     }
-   };
+  };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
@@ -53,7 +58,7 @@ export default function InputBar({ onScan, onInputEdit, isLoading, isLocked }: I
         <div className={styles.iconWrapper}>
           <Search size={18} />
         </div>
-        { error && <span className={styles.errorMessage}>{error}</span>}
+        {error && <span className={styles.errorMessage}>{error}</span>}
         <label htmlFor="url-scan-input" className={styles.srOnly}>
           Target Website URL
         </label>
@@ -73,7 +78,13 @@ export default function InputBar({ onScan, onInputEdit, isLoading, isLocked }: I
         disabled={isLoading || isLocked || !inputValue.trim()}
       >
         <Zap size={16} className={isLoading ? styles.spinning : ""} />
-        <span>{isLocked ? "[ SYSTEM::LOCKED ]" : (isLoading ? "SCANNING..." : "INITIATE")}</span>
+        <span>
+          {isLocked
+            ? "[ SYSTEM::LOCKED ]"
+            : isLoading
+              ? "SCANNING..."
+              : "INITIATE"}
+        </span>
       </button>
     </form>
   );

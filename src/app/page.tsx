@@ -13,16 +13,16 @@ export default function Home() {
   const [resetKey, setResetKey] = useState(0);
   const isMoving = isLoading || !!auditReport;
   const systemStatus = isLoading
-  ? "[ SYSTEM::ANALYZING_BRIDGE ]"
-  : auditReport
-    ? "[ SYSTEM::SCAN_COMPLETE ]"
-    : "[ SYSTEM::INITIATE_SCAN ]";
+    ? "[ SYSTEM::ANALYZING_BRIDGE ]"
+    : auditReport
+      ? "[ SYSTEM::SCAN_COMPLETE ]"
+      : "[ SYSTEM::INITIATE_SCAN ]";
 
   const handleReset = () => {
     setAuditReport(null);
     setIsLoading(false);
-    setResetKey(prev => prev + 1);
-  }
+    setResetKey((prev) => prev + 1);
+  };
 
   const handleScan = async (url: string) => {
     setIsLoading(true);
@@ -46,16 +46,21 @@ export default function Home() {
   };
 
   return (
-    <div className={clsx(styles.heroContainer, isMoving ? styles.active : styles.idle )}>
+    <div
+      className={clsx(
+        styles.heroContainer,
+        isMoving ? styles.active : styles.idle,
+      )}
+    >
       <div className={styles.spacer}></div>
       <div className={styles.heroSection}>
         <h1 className={styles.heroTitle}>{systemStatus}</h1>
-        <InputBar 
-          key={resetKey} 
-          onScan={handleScan} 
-          onInputEdit={handleUnlock}  
-          isLoading={isLoading} 
-          isLocked={!!auditReport} 
+        <InputBar
+          key={resetKey}
+          onScan={handleScan}
+          onInputEdit={handleUnlock}
+          isLoading={isLoading}
+          isLocked={!!auditReport}
         />
       </div>
       <div className={styles.spacer}></div>
